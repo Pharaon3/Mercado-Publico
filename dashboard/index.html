@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DarkPan - Bootstrap 5 Admin Template</title>
+    <title>Facto</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,7 +46,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3>
+                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Facto</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -60,7 +60,20 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                    <div class="nav-item dropdown">
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-chart-pie me-2"></i>Panel</a>
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-inbox me-2"></i></i>Inbox</a>
+                    <a href="index.html" class="nav-item nav-link" style="display: flex; align-items: center;"><i class="fa fa-users me-2"></i>Client / Proveedores</a>
+                    <a href="index.html" class="nav-item nav-link"><i class="fa fa-spinner me-2"></i>Facturacion</a>
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-dollar-sign me-2"></i>Cobranza</a>
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-hand-holding-usd me-2"></i></i>Financiamiento</a>
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-shopping-cart me-2"></i></i>Cotizaciones</a>
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-cubes me-2"></i></i>Bodega</a>
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-chart-bar me-2"></i>Reportes</a>
+                    <a href="index.html" class="nav-item nav-link"><i class="fas fa-calculator me-2"></i>Contabilidad</a>
+                    <a href="index.html" class="nav-item nav-link" style="display: flex; align-items: center;"><i class="fas fa-list me-2"></i>Ordenes de trabajo</a>
+                    <a href="index.html" class="nav-item nav-link" style="display: flex; align-items: center;"><i class="fas fa-users me-2"></i>Remuneraciones</a>
+                    <a href="index.html" class="nav-item nav-link" style="display: flex; align-items: center;"><i class="fas fa-cogs me-2"></i>Administraction</a>
+                    <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="button.html" class="dropdown-item">Buttons</a>
@@ -80,7 +93,7 @@
                             <a href="404.html" class="dropdown-item">404 Error</a>
                             <a href="blank.html" class="dropdown-item">Blank Page</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </nav>
         </div>
@@ -179,6 +192,30 @@
             </nav>
             <!-- Navbar End -->
 
+            <!-- Sales Chart Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">VENTAS Y COSTOS ÚLTIMOS 12 MESES</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <canvas id="salse-revenue"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">SIGUIENTES PASOS PARA AUMENTAR TUS VENTAS</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <canvas id="worldwide-sales"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sales Chart End -->
 
             <!-- Sale & Revenue Start -->
             <div class="container-fluid pt-4 px-4">
@@ -187,7 +224,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-line fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Today Sale</p>
+                                <p class="mb-2">Venta 12 meses</p>
                                 <h6 class="mb-0">$1234</h6>
                             </div>
                         </div>
@@ -196,7 +233,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-bar fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total Sale</p>
+                                <p class="mb-2">Costo 12 meses</p>
                                 <h6 class="mb-0">$1234</h6>
                             </div>
                         </div>
@@ -205,7 +242,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Today Revenue</p>
+                                <p class="mb-2">Cantidad ventas</p>
                                 <h6 class="mb-0">$1234</h6>
                             </div>
                         </div>
@@ -214,7 +251,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total Revenue</p>
+                                <p class="mb-2">Ticket promedio</p>
                                 <h6 class="mb-0">$1234</h6>
                             </div>
                         </div>
@@ -222,33 +259,6 @@
                 </div>
             </div>
             <!-- Sale & Revenue End -->
-
-
-            <!-- Sales Chart Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Worldwide Sales</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="worldwide-sales"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Salse & Revenue</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="salse-revenue"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Sales Chart End -->
-
 
             <!-- Recent Sales Start -->
             <div class="container-fluid pt-4 px-4">

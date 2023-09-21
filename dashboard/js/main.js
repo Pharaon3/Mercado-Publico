@@ -73,17 +73,17 @@
             datasets: [{
                     label: "USA",
                     data: [15, 30, 55, 65, 60, 80, 95],
-                    backgroundColor: "rgba(235, 22, 22, .7)"
+                    backgroundColor: "rgba(6, 168, 213, .7)"
                 },
                 {
                     label: "UK",
                     data: [8, 35, 40, 60, 70, 55, 75],
-                    backgroundColor: "rgba(235, 22, 22, .5)"
+                    backgroundColor: "rgba(6, 168, 213, .5)"
                 },
                 {
                     label: "AU",
                     data: [12, 25, 45, 55, 65, 70, 60],
-                    backgroundColor: "rgba(235, 22, 22, .3)"
+                    backgroundColor: "rgba(6, 168, 213, .3)"
                 }
             ]
             },
@@ -98,17 +98,17 @@
     var myChart2 = new Chart(ctx2, {
         type: "line",
         data: {
-            labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+            labels: ["Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar"],
             datasets: [{
-                    label: "Salse",
+                    label: "Ventas",
                     data: [15, 30, 55, 45, 70, 65, 85],
-                    backgroundColor: "rgba(235, 22, 22, .7)",
+                    backgroundColor: "rgba(6, 168, 213, .7)",
                     fill: true
                 },
                 {
-                    label: "Revenue",
+                    label: "Costos",
                     data: [99, 135, 170, 130, 190, 180, 270],
-                    backgroundColor: "rgba(235, 22, 22, .5)",
+                    backgroundColor: "rgba(6, 168, 213, .5)",
                     fill: true
                 }
             ]
@@ -129,7 +129,7 @@
             datasets: [{
                 label: "Salse",
                 fill: false,
-                backgroundColor: "rgba(235, 22, 22, .7)",
+                backgroundColor: "rgba(6, 168, 213, .7)",
                 data: [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15]
             }]
         },
@@ -147,11 +147,11 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(235, 22, 22, .7)",
-                    "rgba(235, 22, 22, .6)",
-                    "rgba(235, 22, 22, .5)",
-                    "rgba(235, 22, 22, .4)",
-                    "rgba(235, 22, 22, .3)"
+                    "rgba(6, 168, 213, .7)",
+                    "rgba(6, 168, 213, .6)",
+                    "rgba(6, 168, 213, .5)",
+                    "rgba(6, 168, 213, .4)",
+                    "rgba(6, 168, 213, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]
@@ -170,11 +170,11 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(235, 22, 22, .7)",
-                    "rgba(235, 22, 22, .6)",
-                    "rgba(235, 22, 22, .5)",
-                    "rgba(235, 22, 22, .4)",
-                    "rgba(235, 22, 22, .3)"
+                    "rgba(6, 168, 213, .7)",
+                    "rgba(6, 168, 213, .6)",
+                    "rgba(6, 168, 213, .5)",
+                    "rgba(6, 168, 213, .4)",
+                    "rgba(6, 168, 213, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]
@@ -193,11 +193,11 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(235, 22, 22, .7)",
-                    "rgba(235, 22, 22, .6)",
-                    "rgba(235, 22, 22, .5)",
-                    "rgba(235, 22, 22, .4)",
-                    "rgba(235, 22, 22, .3)"
+                    "rgba(6, 168, 213, .7)",
+                    "rgba(6, 168, 213, .6)",
+                    "rgba(6, 168, 213, .5)",
+                    "rgba(6, 168, 213, .4)",
+                    "rgba(6, 168, 213, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]
