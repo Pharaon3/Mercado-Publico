@@ -60,7 +60,7 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Inicio</a>
-                    <a href="search.html" class="nav-item nav-link active"><i class="fas fa-search me-2"></i>Búsqueda</a>
+                    <a href="search.html" class="nav-item nav-link"><i class="fas fa-search me-2"></i>Búsqueda</a>
                     <a href="flow-up.html" class="nav-item nav-link"><i class="fas fa-sticky-note me-2"></i>Seguimiento</a>
                     <a href="calendar.html" class="nav-item nav-link"><i class="fas fa-calendar me-2"></i>Calendario</a>
                     <div class="nav-item dropdown">
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <a href="index.html" class="nav-item nav-link"><i class="fas fa-store me-2"></i>Convenio Marco</a>
-                    <a href="Configuracion.html" class="nav-item nav-link"><i class="fas fa-cog me-2"></i>Configuración</a>
+                    <a href="Configuracion.html" class="nav-item nav-link active"><i class="fas fa-cog me-2"></i>Configuración</a>
                     <a href="index.html" class="nav-item nav-link"><i class="fas fa-question-circle me-2"></i>Ayunda</a>
                     <a href="index.html" class="nav-item nav-link"><i class="fas fa-cubes me-2"></i></i>Bodega</a>
                     <a href="index.html" class="nav-item nav-link"><i class="fas fa-chart-bar me-2"></i>Reportes</a>
@@ -173,66 +173,151 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-
-            <!-- Recent Sales Start -->
             <style>
-                .column-space-around{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
+                .page-content {    
+                    min-height: calc(100vh - 179px);
                 }
             </style>
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-secondary text-center rounded p-4" style="height: 524px;">
-                    <style>
-                        th {
-                            color: white;
-                            font-weight: bold;
-                        }
-                        #Oportunidades-destacadas tr> td {
-                            padding: 1rem 0.5rem;
-                        }
-                    </style>
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <h3 class="mb-0 me-2">Búsqueda | </h3>
-                            <h6 class="mb-0">Oportunidades disponibles para adjudicación según tu configuración.</h6>
-                        </div>
-                        <a href="">Show All</a>
-                    </div>
-                    <div class="table-responsive">
-                        <table id="Oportunidades-destacadas" class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Organismo</th>
-                                    <th scope="col">Tipo</th>
-                                    <th scope="col">Región</th>
-                                    <th scope="col">Monto disponible</th>
-                                    <th scope="col">Cierre</th>
-                                    <th scope="col">Publicación</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row"></th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <div class="page-content">
+                <div class="container-fluid pt-4 px-4">
+                    <div class="d-flex align-items-center">
+                        <h3 class="mb-0 me-2">Configuración | </h3>
+                        <h6 class="mb-0">Actualiza la información para tener un mejor perfilamiento en tu búsqueda.</h6>
                     </div>
                 </div>
-                
+                <!-- Sale & Revenue Start -->
+                <style>
+                    .card{
+                        height: 100%;
+                        flex-direction: row;
+                    }
+                </style>
+                <div class="container-fluid pt-4 px-4">
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="bg-secondary rounded h-100 p-4">
+                                <h6 class="mb-4">Palabras Claves</h6>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Ingresa todas las que quieras. Usa palabras simples o compuestas. EJ: <br> guardia, plaga, computador, articulos de ferreteria.</label>
+                                        <div class="d-flex align-items-center">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nueva palabra clave" aria-describedby="emailHelp">
+                                            <button type="button" class="btn btn-primary ms-2">Add</button>
+                                        </div>
+                                        
+                                        <!-- <div id="emailHelp" class="form-text">Ingresa todas las que quieras. Usa palabras simples o compuestas. EJ: guardia, plaga, computador, articulos de ferreteria.
+                                        </div> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="bg-secondary rounded h-100 p-4">
+                                <textarea class="form-control" placeholder="" id="floatingTextarea" style="height: 150px;"></textarea>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="bg-secondary rounded h-100 p-4">
+                                <h6 class="mb-4">Rubros</h6>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Busca tus rubros y seleccionalos desde la lista. Te recomendamos marcar la casilla a la derecha para incluir todo los resultados.</label>
+                                        <div class="d-flex align-items-center">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nuevo rubro" aria-describedby="emailHelp">
+                                            <button type="button" class="btn btn-primary ms-2">Add</button>
+                                        </div>
+                                        
+                                        <!-- <div id="emailHelp" class="form-text">Ingresa todas las que quieras. Usa palabras simples o compuestas. EJ: guardia, plaga, computador, articulos de ferreteria.
+                                        </div> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="bg-secondary rounded h-100 p-4">
+                                <textarea class="form-control" placeholder="" id="floatingTextarea" style="height: 150px;"></textarea>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="bg-secondary rounded h-100 p-4">
+                                <h6 class="mb-4">Códigos Convenio Marco</h6>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Agrega los códigos de convenio marco de las grandes compras que quieres seguir.</label>
+                                        <div class="d-flex align-items-center">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nuevo cóidigo" aria-describedby="emailHelp">
+                                            <button type="button" class="btn btn-primary ms-2">Add</button>
+                                        </div>
+                                        
+                                        <!-- <div id="emailHelp" class="form-text">Ingresa todas las que quieras. Usa palabras simples o compuestas. EJ: guardia, plaga, computador, articulos de ferreteria.
+                                        </div> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xl-6">
+                            <div class="bg-secondary rounded h-100 p-4">
+                                <textarea class="form-control" placeholder="" id="floatingTextarea" style="height: 150px;"></textarea>
+                            </div>                            
+                        </div>
+                    </div>   
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-12 col-xl-12">
+                            <div class="bg-secondary rounded h-100 p-4">
+                                <h6 class="mb-4">Buscador</h6>
+                                <div class="row g-4 mb-4">
+                                    <div class="col-sm-4 col-xl-2">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Buscar Licitaciones </label>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-sm-4 col-xl-2">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Buscar Compras Ágiles</label>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-sm-4 col-xl-2">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault"> Convenio Marco </label>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-sm-4 col-xl-2">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Buscar Cotizaciones</label>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-sm-4 col-xl-2">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Buscar Grandes Compras</label>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-info m-2">Guardar</button> 
+                        <button type="button" class="btn btn-light m-2">Cancelar</button>
+                    </div>                                  
+                </div>
+                <!-- Sale & Revenue End -->
             </div>
-            <!-- Recent Sales End -->
-
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded-top p-4">
