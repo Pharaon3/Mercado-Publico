@@ -71,17 +71,17 @@
         data: {
             labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
             datasets: [{
-                    label: "USA",
+                    label: "Licitaciones",
                     data: [15, 30, 55, 65, 60, 80, 95],
                     backgroundColor: "rgba(6, 168, 213, .7)"
                 },
                 {
-                    label: "UK",
+                    label: "Compra Ágil",
                     data: [8, 35, 40, 60, 70, 55, 75],
                     backgroundColor: "rgba(6, 168, 213, .5)"
                 },
                 {
-                    label: "AU",
+                    label: "Convenio Marco",
                     data: [12, 25, 45, 55, 65, 70, 60],
                     backgroundColor: "rgba(6, 168, 213, .3)"
                 }
@@ -125,12 +125,12 @@
     var myChart3 = new Chart(ctx3, {
         type: "line",
         data: {
-            labels: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150],
+            labels: [50, 60, 70, 80, 90, 100],
             datasets: [{
                 label: "Salse",
                 fill: false,
                 backgroundColor: "rgba(6, 168, 213, .7)",
-                data: [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15]
+                data: [7, 14, 14, 5, 6, 15]
             }]
         },
         options: {

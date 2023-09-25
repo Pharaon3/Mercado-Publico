@@ -46,7 +46,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Ofertaadjudicada</h3>
+                    <h3 class="text-primary">Ofertaadjudicada</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -69,27 +69,6 @@
                     <a href="index.html" class="nav-item nav-link"><i class="fas fa-question-circle me-2"></i>Ayunda</a>
                     <a href="index.html" class="nav-item nav-link"><i class="fas fa-cubes me-2"></i></i>Bodega</a>
                     <a href="index.html" class="nav-item nav-link"><i class="fas fa-chart-bar me-2"></i>Reportes</a>
-                    <!-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Buttons</a>
-                            <a href="typography.html" class="dropdown-item">Typography</a>
-                            <a href="element.html" class="dropdown-item">Other Elements</a>
-                        </div>
-                    </div>
-                    <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
-                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="signin.html" class="dropdown-item">Sign In</a>
-                            <a href="signup.html" class="dropdown-item">Sign Up</a>
-                            <a href="404.html" class="dropdown-item">404 Error</a>
-                            <a href="blank.html" class="dropdown-item">Blank Page</a>
-                        </div>
-                    </div> -->
                 </div>
             </nav>
         </div>
@@ -109,6 +88,7 @@
                 <form class="d-none d-md-flex ms-4">
                     <input class="form-control bg-dark border-0" type="search" placeholder="Search">
                 </form>
+                <h6 class="ms-2" style="margin-bottom: 0px;"> Buenas tardes, John. </h6>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
@@ -188,54 +168,35 @@
             </nav>
             <!-- Navbar End -->
 
-            <!-- Sales Chart Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">VENTAS Y COSTOS ÚLTIMOS 12 MESES</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="salse-revenue"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary text-center rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">SIGUIENTES PASOS PARA AUMENTAR TUS VENTAS</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <canvas id="worldwide-sales"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Sales Chart End -->
-
             <!-- Sale & Revenue Start -->
+            <style>
+                .card{
+                    height: 100%;
+                    flex-direction: row;
+                }
+            </style>
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-6 col-xl-3">
-                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="fa fa-chart-line fa-3x text-primary"></i>
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 card">
+                            <i class="fas fa-rocket fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Venta 12 meses</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Oportunidades Disponibles en Mercado Público</p>
+                                <h6 class="mb-0">4726</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
-                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 card">
                             <i class="fa fa-chart-bar fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Costo 12 meses</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">En Licitaciones disponibles en Mercado Público </p>
+                                <h6 class="mb-0">$672.548.208.414</h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
-                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 card">
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Cantidad ventas</p>
@@ -244,11 +205,11 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
-                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="fa fa-chart-pie fa-3x text-primary"></i>
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 card">
+                            <i class="fas fa-calendar fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Ticket promedio</p>
-                                <h6 class="mb-0">$1234</h6>
+                                <p class="mb-2">Oportunidades cierran esta semana</p>
+                                <h6 class="mb-0">0</h6>
                             </div>
                         </div>
                     </div>
@@ -257,191 +218,260 @@
             <!-- Sale & Revenue End -->
 
             <!-- Recent Sales Start -->
+            <style>
+                .column-space-around{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+            </style>
             <div class="container-fluid pt-4 px-4">
-                <div class="bg-secondary text-center rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
-                        <a href="">Show All</a>
+                <div class="row g-4">
+                    <div class="col-sm-12 col-md-6 col-xl-9">
+                        <div class="bg-secondary text-center rounded p-4" style="height: 524px;">
+                            <style>
+                                th {
+                                    color: white;
+                                    font-weight: bold;
+                                }
+                                #Oportunidades-destacadas tr> td {
+                                    padding: 1rem 0.5rem;
+                                }
+                            </style>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Oportunidades destacadas</h6>
+                                <a href="">Show All</a>
+                            </div>
+                            <div class="table-responsive">
+                                <table id="Oportunidades-destacadas" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Comprador</th>
+                                            <th scope="col">Monto</th>
+                                            <th scope="col">Cierre</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">634-134-LR23</th>
+                                            <td>MÁQUINAS DE INSPECCIÓN DE BULTOS POR RAYOS X</td>
+                                            <td>Direccion General De Gendarmer...</td>
+                                            <td>$476.000.000</td>
+                                            <td>18/10/2023</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">634-134-LR23</th>
+                                            <td>MÁQUINAS DE INSPECCIÓN DE BULTOS POR RAYOS X</td>
+                                            <td>Direccion General De Gendarmer...</td>
+                                            <td>$476.000.000</td>
+                                            <td>18/10/2023</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">634-134-LR23</th>
+                                            <td>MÁQUINAS DE INSPECCIÓN DE BULTOS POR RAYOS X</td>
+                                            <td>Direccion General De Gendarmer...</td>
+                                            <td>$476.000.000</td>
+                                            <td>18/10/2023</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">634-134-LR23</th>
+                                            <td>MÁQUINAS DE INSPECCIÓN DE BULTOS POR RAYOS X</td>
+                                            <td>Direccion General De Gendarmer...</td>
+                                            <td>$476.000.000</td>
+                                            <td>18/10/2023</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">634-134-LR23</th>
+                                            <td>MÁQUINAS DE INSPECCIÓN DE BULTOS POR RAYOS X</td>
+                                            <td>Direccion General De Gendarmer...</td>
+                                            <td>$476.000.000</td>
+                                            <td>18/10/2023</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">634-134-LR23</th>
+                                            <td>MÁQUINAS DE INSPECCIÓN DE BULTOS POR RAYOS X</td>
+                                            <td>Direccion General De Gendarmer...</td>
+                                            <td>$476.000.000</td>
+                                            <td>18/10/2023</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="table-responsive">
-                        <table class="table text-start align-middle table-bordered table-hover mb-0">
-                            <thead>
-                                <tr class="text-white">
-                                    <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Invoice</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="col-sm-12 col-md-6 col-xl-3">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4" style="margin-bottom: 10px;">
+                            <div class="ms-3" style="display: flex; justify-content: space-around;">
+                                <div class="column-space-around">
+                                    <p class="mb-2">Productos </p>
+                                    <h3 class="mb-0">42.1k</h3>
+                                    <div style="display: flex; align-items: center; color: green;">
+                                        <i class="fas fa-arrow-up mb-2"></i>
+                                        <p class="mb-2 ms-2">+1% </p>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <svg width="180" height="120" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M 10 80 Q 32.5 10, 65 80 T 180 50" stroke="#06A3DA" fill="transparent"/>
+                                    </svg>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4" style="margin-bottom: 10px;">
+                            <div class="ms-3" style="display: flex; justify-content: space-around;">
+                                <div class="column-space-around">
+                                    <p class="mb-2">Proveedores </p>
+                                    <h3 class="mb-0">18.9k</h3>
+                                    <div style="display: flex; align-items: center; color: red;">
+                                        <i class="fas fa-arrow-down mb-2"></i>
+                                        <p class="mb-2 ms-2">-5% </p>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <svg width="180" height="120" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M 10 80 Q 32.5 10, 65 80 T 180 50" stroke="#06A3DA" fill="transparent"/>
+                                    </svg>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4" style="margin-bottom: 10px;">
+                            <div class="ms-3" style="display: flex; justify-content: space-around;">
+                                <div class="column-space-around">
+                                    <p class="mb-2">Ventas  </p>
+                                    <h3 class="mb-0">$155.0G</h3>
+                                    <div style="display: flex; align-items: center; color: red;">
+                                        <i class="fas fa-arrow-down mb-2"></i>
+                                        <p class="mb-2 ms-2">-2% </p>
+                                    </div>
+                                </div>
+                                <div class="ms-3">
+                                    <svg width="180" height="120" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M 10 80 Q 32.5 10, 65 80 T 180 50" stroke="#06A3DA" fill="transparent"/>
+                                    </svg>
+                                </div>                                
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
             <!-- Recent Sales End -->
 
-
-            <!-- Widgets Start -->
+            <!-- Sales Chart Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-secondary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-2">
-                                <h6 class="mb-0">Messages</h6>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary text-center rounded p-4 column-space-around" style="height: 600px;">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Ventas Mensuales segun Órdenes de Compra</h6>
                                 <a href="">Show All</a>
                             </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
+                            <canvas id="worldwide-sales"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-3">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4" style="margin-bottom: 10px;">
+                            <div class="ms-3" style="display: flex; justify-content: space-around;">
+                                <div class="column-space-around">
+                                    <i class="fas fa-users fa-2x text-primary mb-2"></i>
+                                    <p class="mb-2">Clientes</p>
+                                    <h3 class="mb-0">924</h3>
+                                    <div style="display: flex; align-items: center; color: red;">
+                                        <i class="fas fa-arrow-down mb-2"></i>
+                                        <p class="mb-2 ms-2">-3% </p>
                                     </div>
-                                    <span>Short message goes here...</span>
                                 </div>
+                                <div class="ms-3">
+                                    <svg width="180" height="120" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M 10 80 Q 32.5 10, 65 80 T 180 50" stroke="#06A3DA" fill="transparent"/>
+                                    </svg>
+                                </div>                                
                             </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-3">
-                                <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-0">Jhon Doe</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                    <span>Short message goes here...</span>
-                                </div>
+                        </div>
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4" style="margin-bottom: 10px;">
+                            <div class="ms-3 column-space-around">
+                                <i class="fas fa-search fa-2x text-primary mb-2"></i>
+                                <h4 class="mb-2">Principal Rubro</h4>
+                                <p class="mb-2">Ingeniería civil</p>
+                                <h3 class="mb-0">$36.841.361.685.938</h3>
+                                <div style="display: flex; align-items: center; color: red;">
+                                    <i class="fas fa-arrow-down mb-2"></i>
+                                    <p class="mb-2 ms-2">-3% </p>
+                                </div>                          
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-secondary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Calender</h6>
-                                <a href="">Show All</a>
+                    <div class="col-sm-12 col-xl-3">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-center p-4" style="margin-bottom: 10px;">
+                            <div class="testimonial-item text-center">
+                                <img class="img-fluid rounded-circle mx-auto mb-4" src="img/user.jpg" style="width: 100px; height: 100px;">
+                                <h5 class="mb-1">John Doe</h5>
+                                <p>John.Doe@gmail.com</p>
+                                <button type="button" class="btn btn-primary rounded-pill m-2">+ Invitar</button>
                             </div>
-                            <div id="calender"></div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-secondary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">To Do List</h6>
-                                <a href="">Show All</a>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <input class="form-control bg-dark border-0" type="text" placeholder="Enter task">
-                                <button type="button" class="btn btn-primary ms-2">Add</button>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4" style="margin-bottom: 10px;">
+                            <div class="h-100 bg-secondary rounded p-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="mb-0">Experiencia LicitaLAB</h6>
+                                    <a href="">17%</a>
+                                </div>
+                                <div class="d-flex align-items-center border-bottom p-0">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span><del>Registro exitoso</del></span>
+                                            <button class="btn btn-sm"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                <div class="d-flex align-items-center border-bottom p-0">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Configura tu búsqueda</span>
+                                            <button class="btn btn-sm text-primary"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox" checked>
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span><del>Short task goes here...</del></span>
-                                        <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
+                                <div class="d-flex align-items-center border-bottom p-0">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Envía negocios a seguimiento</span>
+                                            <button class="btn btn-sm text-primary"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center border-bottom py-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                <div class="d-flex align-items-center border-bottom p-0">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Short task goes here...</span>
+                                            <button class="btn btn-sm text-primary"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-2">
-                                <input class="form-check-input m-0" type="checkbox">
-                                <div class="w-100 ms-3">
-                                    <div class="d-flex w-100 align-items-center justify-content-between">
-                                        <span>Short task goes here...</span>
-                                        <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                                <div class="d-flex align-items-center border-bottom p-0">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Asigna un negocio a tu equipo de trabajo</span>
+                                            <button class="btn btn-sm text-primary"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center border-bottom p-0">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Ingresa un nuevo proveedor</span>
+                                            <button class="btn btn-sm text-primary"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center border-bottom p-0">
+                                    <div class="w-100 ms-3">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                            <span>Ingresa un nuevo producto</span>
+                                            <button class="btn btn-sm text-primary"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -449,15 +479,14 @@
                     </div>
                 </div>
             </div>
-            <!-- Widgets End -->
-
+            <!-- Sales Chart End -->
 
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                            &copy; <a href="#">Ofertaadjudicada</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             Designed By <a href="https://freelancer.com/u/kozaktr">Marsel Kozak</a>
